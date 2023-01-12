@@ -1,0 +1,14 @@
+name: Test Action
+
+on: [push]
+
+jobs:
+  fish_indent:
+    runs-on: ubuntu-latest
+    name: Run vint
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: run vint
+        id: run_vint
+        uses: ./

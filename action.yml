@@ -1,0 +1,8 @@
+name: "Vint"
+description: "Run vint to lint vimscript files"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+outputs:
+  output:
+    description: "vint results"
